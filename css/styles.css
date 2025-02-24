@@ -1,0 +1,107 @@
+/* Modern, responsive design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    max-width: 90%;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    border-color: #5563DE;
+}
+
+#addTask {
+    padding: 0.75rem 1rem;
+    border: none;
+    background: #5563DE;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#addTask:hover {
+    background: #4552c9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    flex: 1;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li button {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+li button:hover {
+    color: #333;
+}
